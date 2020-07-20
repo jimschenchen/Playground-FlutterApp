@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       // app name
       home: RandomWords(),
       theme: ThemeData(
-        primaryColor: Colors.white,
+        primaryColor: Colors.red,
       ),
     );
   }
