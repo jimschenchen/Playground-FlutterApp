@@ -102,7 +102,7 @@ class _RandomWordsState extends State<RandomWords> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Name Generator'),
+        title: Text('Names Generator'),
         actions: [
           IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
         ],
