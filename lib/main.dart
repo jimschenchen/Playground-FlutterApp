@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'package:flui/flui.dart';
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
@@ -107,7 +108,16 @@ class _RandomWordsState extends State<RandomWords> {
           IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
         ],
       ),
-      body: _buildSuggestions(),
+      body: _FLUI(),
+    );
+  }
+
+  Widget _FLUI() {
+    return FLGradientButton.linear(
+      textColor: Colors.white,
+      child: Text('Linear Gradient Button'),
+      colors: [Colors.lightBlueAccent, Color(0xFF0F4C81)],
+      onPressed: () => print('on click'),
     );
   }
 }
